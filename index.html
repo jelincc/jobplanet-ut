@@ -3446,6 +3446,23 @@
 </style>
 </head>
 <body>
+<script>
+  // 카드 썸네일 로드 실패 시 무료 이미지로 자동 대체
+  window.__fbPool = [
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
+    'https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&q=80',
+    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80',
+    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80',
+    'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80',
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+    'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80',
+    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80'
+  ];
+  window.__imgErr = function(el){
+    el.onerror = null;
+    el.src = window.__fbPool[Math.floor(Math.random() * window.__fbPool.length)];
+  };
+</script>
 
 <header class="gnb">
   <div class="gnb-in">
@@ -4279,7 +4296,7 @@
             var t = item.data; var idx = item.origIdx;
             return '<div onclick="openThemeDetail('+idx+')" style="cursor:pointer;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;min-width:calc((100% - 24px) / 2.7);flex-shrink:0;" onmouseenter="this.style.transform=\'translateY(-2px)\';this.style.boxShadow=\'0 6px 20px rgba(0,0,0,0.1)\'" onmouseleave="this.style.transform=\'none\';this.style.boxShadow=\'0 2px 12px rgba(0,0,0,.06)\'">' +
               '<div style="position:relative;width:100%;height:140px;overflow:hidden;">' +
-                '<img src="'+(t.extImg ? t.img : BASE+'img/'+t.img)+'" alt="" style="width:100%;height:100%;object-fit:cover;">' +
+                '<img src="'+(t.extImg ? t.img : BASE+'img/'+t.img)+'" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="window.__imgErr(this)">' +
                 '<div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,0.35) 100%);"></div>' +
                 '<span style="position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:20px;background:rgba(0,0,0,.4);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:11px;font-weight:600;">'+t.badge+'</span>' +
               '</div>' +
@@ -4333,7 +4350,7 @@
             var safeMeta = j.meta.replace(/'/g,"\\'");
             return '<div onclick="goJobDetail(\''+safeTitle+'\',\''+safeCo.split(' · ')[0]+'\',\''+safeMeta+'\',\''+thumbSrc+'\')" style="cursor:pointer;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:var(--sh);transition:transform .15s;" onmouseenter="this.style.transform=\'translateY(-2px)\'" onmouseleave="this.style.transform=\'none\'">' +
               '<div style="position:relative;width:100%;padding-top:56.25%;overflow:hidden;">' +
-                '<img src="'+thumbSrc+'" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" loading="lazy">' +
+                '<img src="'+thumbSrc+'" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="window.__imgErr(this)">' +
               '</div>' +
               '<div style="padding:10px 10px 12px;">' +
                 '<div style="font-size:13px;font-weight:700;color:var(--tx);margin-bottom:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+j.title+'</div>' +
@@ -17322,7 +17339,7 @@ function closeRatePopup() {
           // 잡코리아 지원과 취업축하금은 공존 불가
           if(isExt) bonusBadge = '';
           var thumb = '<div class="thumb">'
-            + '<img src="' + thumbSrc + '" alt="">'
+            + '<img src="' + thumbSrc + '" alt="" onerror="window.__imgErr(this)">'
             + bonusBadge
             + jkBadge
             + '<div class="bk-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></div>'
