@@ -1,6 +1,6 @@
 # JDS-QA 대시보드 — 지라 자동 동기화
 
-`https://jelin-cc.github.io/jobplanet-ut/jds-qa/`
+`https://jelincc.github.io/jobplanet-ut/jds-qa/`
 
 ## 구성
 - `index.html` — 대시보드 (단일 파일). 데이터 블록(`SEED`/`SPRINT_OF`/`QA_OF`/`SUBTASKS`/`ASOF`)은 **자동 생성**되므로 직접 수정 금지.

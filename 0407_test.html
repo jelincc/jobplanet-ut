@@ -3333,7 +3333,7 @@
               var cx=130, cy=118, R=100;
               var angles = [-90, -90+72, -90+144, -90+216, -90+288]; // 상단부터 시계방향
 
-              var BASE='https://jelin-cc.github.io/jobplanet-ut/';
+              var BASE='https://jelincc.github.io/jobplanet-ut/';
               var insightCoPool = [];
               var coNames = ['네이버','토스','카카오','당근마켓','쿠팡','배달의민족','라인플러스','야놀자','무신사','하이브','크래프톤','두나무','리디','센드버드','채널톡','올리브영','위메프','소카','컬리','스마일게이트','넥슨코리아','버킷플레이스','비바리퍼블리카','카카오뱅크','토스증권','삼성전자','LG전자','현대자동차','SK텔레콤','넥스트엔터프라이즈','마이리얼트립','인사이트코리아'];
               for(var _ci=0;_ci<32;_ci++){
@@ -3432,21 +3432,21 @@
             <!-- 기업 리스트 -->
             <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
               <div id="fi-0" onclick="goToInsightCompany(0)" style="display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:10px;background:#F9FAFB;cursor:pointer;transition:all .2s;">
-                <div class="fit-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/naver.png" alt=""></div>
+                <div class="fit-logo"><img src="https://jelincc.github.io/jobplanet-ut/naver.png" alt=""></div>
                 <span class="fit-name">네이버</span>
                 <span class="fit-score"><svg width="12" height="12" viewBox="0 0 24 24" fill="#F59E0B" style="vertical-align:middle;margin-right:1px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.1</span>
                 <span class="fit-pct" style="color:var(--brand);background:var(--brand-lt);border:none;">적합 88%</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--tx4)" stroke-width="2" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
               <div id="fi-1" onclick="goToInsightCompany(1)" style="display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:10px;background:#F9FAFB;cursor:pointer;transition:all .2s;">
-                <div class="fit-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/toss.png" alt=""></div>
+                <div class="fit-logo"><img src="https://jelincc.github.io/jobplanet-ut/toss.png" alt=""></div>
                 <span class="fit-name">토스</span>
                 <span class="fit-score"><svg width="12" height="12" viewBox="0 0 24 24" fill="#F59E0B" style="vertical-align:middle;margin-right:1px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 3.6</span>
                 <span class="fit-pct" style="color:var(--brand);background:var(--brand-lt);border:none;">적합 85%</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--tx4)" stroke-width="2" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
               <div id="fi-2" onclick="goToInsightCompany(2)" style="display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:10px;background:#F9FAFB;cursor:pointer;transition:all .2s;">
-                <div class="fit-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/kakao.png" alt=""></div>
+                <div class="fit-logo"><img src="https://jelincc.github.io/jobplanet-ut/kakao.png" alt=""></div>
                 <span class="fit-name">카카오</span>
                 <span class="fit-score"><svg width="12" height="12" viewBox="0 0 24 24" fill="#F59E0B" style="vertical-align:middle;margin-right:1px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 3.2</span>
                 <span class="fit-pct" style="color:var(--brand);background:var(--brand-lt);border:none;">적합 82%</span>
@@ -3615,16 +3615,16 @@
         function renderReviewCards(){
           var isLoggedIn=document.getElementById('gnb-user').style.display!=='none';
           var hasJob=obSelectedJob&&obSelectedJob.length>0;
-          var thumbImg='<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-thumbsup.svg" width="16" height="16">';
+          var thumbImg='<img src="https://jelincc.github.io/jobplanet-ut/emoji-thumbsup.svg" width="16" height="16">';
           var starSvg='<svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
           var chevronSvg='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
 
-          var fireImg='<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;">';
+          var fireImg='<img src="https://jelincc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;">';
 
           var cards;
-          var card1_hot = {theme:fireImg+' <span style="font-weight:700;">전직장</span> 화제의 리뷰',themeBg:'background:#FFF8EE;',helps:47,logo:'https://jelin-cc.github.io/jobplanet-ut/toss.png',co:'비바퍼블리카',badge:'전직장',job:'개발',date:'2026.03',score:'4.1',title:'복지는 점점 줄지만 다니기 좋은 회사. 실력보다는 인맥 관리를 잘해야 살아 남는 조직',pro:'수평적 문화가 실제로 작동해요. 사수 없어도 누구한테든 물어볼 수 있어서 주니어도 빠르게 성장해요.',con:'대부분 야근하는 듯. 자유롭지만 그만큼 압박이 느껴져요 물론 팀바팀일 수 있어요'};
-          var card2_recent = {theme:fireImg+'가장 <span style="font-weight:700;">최근</span>에 올라온 리뷰',themeBg:'background:#F0F9FF;',helps:0,timeAgo:true,logo:'https://jelin-cc.github.io/jobplanet-ut/당근.png',co:'(주)당근마켓',badge:'현직장',job:'디자인',date:'2026.02',score:'4.0',title:'매우 자유롭고 실행력 있게 할 수 있어요. 다만 야근을 당연시하는 문화가 있어요',pro:'자유롭고 수평적이에요. 식재 지원, 편안한 분위기에요.',con:'커질수록 금전적 보상을 노린 불평러들이 들어오면서 약간 스트레스였음.'};
-          var card2_job = {theme:thumbImg+' <span style="font-weight:700;color:var(--brand);">'+obSelectedJob+'</span> 추천 리뷰',themeBg:'background:var(--brand-lt);',helps:32,logo:'https://jelin-cc.github.io/jobplanet-ut/당근.png',co:'(주)당근마켓',badge:'현직장',job:'디자인',date:'2026.02',score:'4.0',title:'매우 자유롭고 실행력 있게 할 수 있어요. 다만 야근을 당연시하는 문화가 있어요',pro:'자유롭고 수평적이에요. 식재 지원, 편안한 분위기에요.',con:'커질수록 금전적 보상을 노린 불평러들이 들어오면서 약간 스트레스였음.'};
+          var card1_hot = {theme:fireImg+' <span style="font-weight:700;">전직장</span> 화제의 리뷰',themeBg:'background:#FFF8EE;',helps:47,logo:'https://jelincc.github.io/jobplanet-ut/toss.png',co:'비바퍼블리카',badge:'전직장',job:'개발',date:'2026.03',score:'4.1',title:'복지는 점점 줄지만 다니기 좋은 회사. 실력보다는 인맥 관리를 잘해야 살아 남는 조직',pro:'수평적 문화가 실제로 작동해요. 사수 없어도 누구한테든 물어볼 수 있어서 주니어도 빠르게 성장해요.',con:'대부분 야근하는 듯. 자유롭지만 그만큼 압박이 느껴져요 물론 팀바팀일 수 있어요'};
+          var card2_recent = {theme:fireImg+'가장 <span style="font-weight:700;">최근</span>에 올라온 리뷰',themeBg:'background:#F0F9FF;',helps:0,timeAgo:true,logo:'https://jelincc.github.io/jobplanet-ut/당근.png',co:'(주)당근마켓',badge:'현직장',job:'디자인',date:'2026.02',score:'4.0',title:'매우 자유롭고 실행력 있게 할 수 있어요. 다만 야근을 당연시하는 문화가 있어요',pro:'자유롭고 수평적이에요. 식재 지원, 편안한 분위기에요.',con:'커질수록 금전적 보상을 노린 불평러들이 들어오면서 약간 스트레스였음.'};
+          var card2_job = {theme:thumbImg+' <span style="font-weight:700;color:var(--brand);">'+obSelectedJob+'</span> 추천 리뷰',themeBg:'background:var(--brand-lt);',helps:32,logo:'https://jelincc.github.io/jobplanet-ut/당근.png',co:'(주)당근마켓',badge:'현직장',job:'디자인',date:'2026.02',score:'4.0',title:'매우 자유롭고 실행력 있게 할 수 있어요. 다만 야근을 당연시하는 문화가 있어요',pro:'자유롭고 수평적이에요. 식재 지원, 편안한 분위기에요.',con:'커질수록 금전적 보상을 노린 불평러들이 들어오면서 약간 스트레스였음.'};
 
           if(isLoggedIn) {
             // 로그인 상태: 첫번째는 항상 전직장 화제의 리뷰
@@ -3638,7 +3638,7 @@
           } else {
             // 비로그인: 이번 주 가장 많이 본 리뷰 + 최근에 올라온 리뷰
             cards=[
-              {theme:fireImg+' <span style="font-weight:700;">이번 주</span> 가장 많이 본 리뷰',themeBg:'background:#FFF8EE;',helps:47,logo:'https://jelin-cc.github.io/jobplanet-ut/toss.png',co:'비바퍼블리카',badge:'전직장',job:'개발',date:'2026.03',score:'4.1',title:'복지는 점점 줄지만 다니기 좋은 회사. 실력보다는 인맥 관리를 잘해야 살아 남는 조직',pro:'수평적 문화가 실제로 작동해요. 사수 없어도 누구한테든 물어볼 수 있어서 주니어도 빠르게 성장해요.',con:'대부분 야근하는 듯. 자유롭지만 그만큼 압박이 느껴져요 물론 팀바팀일 수 있어요'},
+              {theme:fireImg+' <span style="font-weight:700;">이번 주</span> 가장 많이 본 리뷰',themeBg:'background:#FFF8EE;',helps:47,logo:'https://jelincc.github.io/jobplanet-ut/toss.png',co:'비바퍼블리카',badge:'전직장',job:'개발',date:'2026.03',score:'4.1',title:'복지는 점점 줄지만 다니기 좋은 회사. 실력보다는 인맥 관리를 잘해야 살아 남는 조직',pro:'수평적 문화가 실제로 작동해요. 사수 없어도 누구한테든 물어볼 수 있어서 주니어도 빠르게 성장해요.',con:'대부분 야근하는 듯. 자유롭지만 그만큼 압박이 느껴져요 물론 팀바팀일 수 있어요'},
               card2_recent
             ];
           }
@@ -3698,18 +3698,18 @@
 
       <!-- 카테고리 탭 + 초기화 -->
       <div style="display:flex;align-items:center;gap:7px;margin-bottom:12px;margin-top:14px;">
-        <button id="cat-0" onclick="setCat(0)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:700;border:1.5px solid var(--tx);background:var(--tx);color:#fff;cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-moneybag.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 승진·연봉</button>
-        <button id="cat-1" onclick="setCat(1)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-clover.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 워라밸</button>
-        <button id="cat-2" onclick="setCat(2)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-institution.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 수평문화</button>
-        <button id="cat-3" onclick="setCat(3)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-books.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 성장·학습</button>
-        <button id="cat-4" onclick="setCatCustom()" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-briefcase.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 직군 맞춤</button>
+        <button id="cat-0" onclick="setCat(0)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:700;border:1.5px solid var(--tx);background:var(--tx);color:#fff;cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-moneybag.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 승진·연봉</button>
+        <button id="cat-1" onclick="setCat(1)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-clover.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 워라밸</button>
+        <button id="cat-2" onclick="setCat(2)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-institution.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 수평문화</button>
+        <button id="cat-3" onclick="setCat(3)" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-books.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 성장·학습</button>
+        <button id="cat-4" onclick="setCatCustom()" style="padding:7px 16px;border-radius:var(--rfull);font-size:13px;font-weight:500;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx3);cursor:pointer;font-family:var(--font);transition:all .2s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-briefcase.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 직군 맞춤</button>
       </div>
 
       <!-- 공고 리스트 (JS로 렌더링) -->
       <div class="job-list" id="rjob-list"></div>
 
       <script>
-        var BASE='https://jelin-cc.github.io/jobplanet-ut/';
+        var BASE='https://jelincc.github.io/jobplanet-ut/';
         var sampleLogos=[];for(var li=1;li<=36;li++)sampleLogos.push(BASE+'D-sample_logo_'+li+'.svg');
         var sampleCompanies=['넥슨코리아','크래프톤','하이브','무신사','야놀자','직방','쏘카','리디','버킷플레이스','왓챠','마이리얼트립','클래스101','센드버드','채널톡','뱅크샐러드','토스증권','카카오뱅크','쿠팡이츠','배달의민족','라인플러스','네이버클라우드','카카오엔터','SK텔레콤','LG전자','삼성SDS','현대오토에버'];
         var sampleMetas=['서울 · 경력 3년↑ · 학력무관','판교 · 경력 무관 · 학력무관','서울 · 경력 2년↑ · 대졸','성남 · 신입/경력 · 학력무관','서울 · 경력 5년↑ · 학력무관','판교 · 경력 1년↑ · 대졸'];
@@ -3883,7 +3883,7 @@
         <!-- ④ 마감 임박 공고 -->
         <div class="side-card">
           <div class="side-hd">
-            <h3><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 마감 임박 공고</h3>
+            <h3><img src="https://jelincc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 마감 임박 공고</h3>
             <span class="side-more" onclick="go('job')">전체 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><polyline points="9 18 15 12 9 6"/></svg></span>
           </div>
           <div class="urgent-list">
@@ -3922,7 +3922,7 @@
           </div>
           <div class="rc-list">
             <div class="rc-item has-update" onclick="openCompany({name:'카카오',score:3.9,industry:'인터넷',loc:'판교',year:2010,size:100,jobs:3,pct:65,initial:'카',keywords:[]})" style="cursor:pointer;">
-              <div class="rc-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/kakao.png" alt=""></div>
+              <div class="rc-logo"><img src="https://jelincc.github.io/jobplanet-ut/kakao.png" alt=""></div>
               <div class="rc-info">
                 <div class="rc-name">카카오</div>
                 <div class="rc-sub update">리뷰 4건 새로 올라왔어요</div>
@@ -3930,7 +3930,7 @@
               <svg class="rc-chevron" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="rc-item has-update" onclick="openCompany({name:'토스',score:4.3,industry:'핀테크',loc:'판교',year:2013,size:100,jobs:5,pct:70,initial:'토',keywords:[]})" style="cursor:pointer;">
-              <div class="rc-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/toss.png" alt=""></div>
+              <div class="rc-logo"><img src="https://jelincc.github.io/jobplanet-ut/toss.png" alt=""></div>
               <div class="rc-info">
                 <div class="rc-name">토스</div>
                 <div class="rc-sub update">채용 공고 2건 신규 등록</div>
@@ -3938,7 +3938,7 @@
               <svg class="rc-chevron" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="rc-item" onclick="openCompany({name:'네이버',score:4.1,industry:'인터넷',loc:'분당',year:1999,size:100,jobs:4,pct:60,initial:'네',keywords:[]})" style="cursor:pointer;">
-              <div class="rc-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/naver.png" alt=""></div>
+              <div class="rc-logo"><img src="https://jelincc.github.io/jobplanet-ut/naver.png" alt=""></div>
               <div class="rc-info">
                 <div class="rc-name">네이버</div>
                 <div class="rc-sub">새로운 정보 없음</div>
@@ -13022,7 +13022,7 @@ function openInterviewReviewWrite() {
         '<h1 style="font-size:24px;font-weight:800;margin:0 0 12px;">면접정보를 작성해주세요.</h1>' +
         '<div class="iv-notice">작성된 정보는 심사과정을 거친 후 게재됩니다.</div>' +
         '<div class="iv-company">' +
-          '<div class="iv-company-logo"><img src="https://jelin-cc.github.io/jobplanet-ut/jp-logo.svg" alt=""></div>' +
+          '<div class="iv-company-logo"><img src="https://jelincc.github.io/jobplanet-ut/jp-logo.svg" alt=""></div>' +
           '<div><div class="iv-company-name">잡플래닛(유)</div><div class="iv-company-sub">IT/웹/통신</div><div style="margin-top:4px;">이 기업이 아닙니까? <a href="#" class="iv-company-change">다른기업 선택하기</a></div></div>' +
         '</div>' +
         '<div class="iv-field"><div class="iv-label">면접경험</div><div class="iv-radio-group"><label class="iv-radio"><input type="radio" name="exp"> 긍정적</label><label class="iv-radio"><input type="radio" name="exp" checked> 보통</label><label class="iv-radio"><input type="radio" name="exp"> 부정적</label></div></div>' +
@@ -14659,8 +14659,8 @@ function closeRatePopup() {
     <div style="display:flex;align-items:center;margin-bottom:20px;gap:6px;">
       <span style="font-size:12px;color:var(--tx4);white-space:nowrap;flex-shrink:0;">핫한 조건</span>
       <div style="display:flex;align-items:center;gap:6px;overflow-x:auto;flex:1;">
-        <button id="hot-initpay5000" onclick="setHotTag('initpay5000')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 초봉 5천↑</button>
-        <button id="hot-salary5000" onclick="setHotTag('salary5000')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><img src="https://jelin-cc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 연봉 5천↑</button>
+        <button id="hot-initpay5000" onclick="setHotTag('initpay5000')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 초봉 5천↑</button>
+        <button id="hot-salary5000" onclick="setHotTag('salary5000')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><img src="https://jelincc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;"> 연봉 5천↑</button>
         <button id="hot-conglomerate" onclick="setHotTag('conglomerate')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#6B7280" style="vertical-align:middle;margin-right:2px;"><path d="M4 21V3h16v18H4zm2-2h3v-3H6v3zm0-5h3v-3H6v3zm0-5h3V6H6v3zm5 10h3v-3h-3v3zm0-5h3v-3h-3v3zm0-5h3V6h-3v3zm5 10h3v-3h-3v3zm0-5h3v-3h-3v3zm0-5h3V6h-3v3z"/></svg> 대기업</button>
         <button id="hot-foreign" onclick="setHotTag('foreign')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#3B82F6" style="vertical-align:middle;margin-right:2px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> 외국계</button>
         <button id="hot-public" onclick="setHotTag('public')" style="padding:5px 12px;border-radius:var(--rfull);font-size:12px;font-weight:600;border:1.5px solid var(--ln);background:var(--surface);color:var(--tx2);cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0;transition:all .15s;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#6B7280" style="vertical-align:middle;margin-right:2px;"><path d="M12 2L2 7v1h20V7L12 2zM4 10v7h3v-7H4zm5 0v7h3v-7H9zm5 0v7h3v-7h-3zm-12 8v2h20v-2H2z"/></svg> 공기업</button>
@@ -14768,7 +14768,7 @@ function closeRatePopup() {
 
       function setSortOrder(order) {
         currentSortOrder = order;
-        var labels = { popular:'인기순', deadline:'마감임박순 <img src="https://jelin-cc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;">', latest:'최신순' };
+        var labels = { popular:'인기순', deadline:'마감임박순 <img src="https://jelincc.github.io/jobplanet-ut/emoji-fire.svg" width="14" height="14" style="vertical-align:middle;margin-right:2px;">', latest:'최신순' };
         document.getElementById('sort-label').innerHTML = labels[order];
         document.getElementById('sort-menu').style.display = 'none';
         // 옵션 스타일 업데이트
@@ -14876,10 +14876,10 @@ function closeRatePopup() {
       })();
 
       var logoMap = {
-        'T': 'https://jelin-cc.github.io/jobplanet-ut/toss.png',
-        'N': 'https://jelin-cc.github.io/jobplanet-ut/naver.png',
-        'K': 'https://jelin-cc.github.io/jobplanet-ut/kakao.png',
-        '당': 'https://jelin-cc.github.io/jobplanet-ut/당근.png'
+        'T': 'https://jelincc.github.io/jobplanet-ut/toss.png',
+        'N': 'https://jelincc.github.io/jobplanet-ut/naver.png',
+        'K': 'https://jelincc.github.io/jobplanet-ut/kakao.png',
+        '당': 'https://jelincc.github.io/jobplanet-ut/당근.png'
       };
 
       // 썸네일 이미지 풀 (셔플해서 카드마다 다른 이미지)
@@ -14887,7 +14887,7 @@ function closeRatePopup() {
         'img/Banner_1tW2cFJ25032514173967.jpg','img/Banner_2loOfzo25052915140814.jpg','img/Banner_4UvepA225031914015500.jpg','img/Banner_5DoT1nZ24111411320084.jpg','img/Banner_abbb51t25102816595906.jpg','img/Banner_ABi9lTY25101711202489.jpg','img/Banner_C3oJp7q25102817553882.jpg','img/Banner_DiMdvUg24111216474465.jpg','img/Banner_E0mPEv625102715305380.jpg','img/Banner_FA8757M24122415321709.jpg','img/Banner_gBJ6Ui725082910083325.jpg','img/Banner_GcTm5G225072215243389.jpg','img/Banner_gRZK5oC25072810592603.jpg','img/Banner_HbrORCN25103117185664.jpg','img/Banner_HNPO3bT24072313252617.jpg','img/Banner_iVPMD6p25092209323563.jpg','img/Banner_jkoaT8i25101510050474.jpg','img/Banner_Jp5fx7g25012110512020.jpg','img/Banner_kAifOHK25082013255486.jpg','img/Banner_kMaNyYZ25110310042647.jpg','img/Banner_mcoXCR225103017092404.jpg','img/Banner_OP2jQmz25052715204502.jpg','img/Banner_PuQjGUE25011715315914.jpg','img/Banner_Q48VLkS24121310465549.jpg','img/Banner_RVLkZ2025102911373557.jpg','img/Banner_skH5zUn24111917362523.jpg','img/Banner_sPBc4me25102718060629.jpg','img/Banner_sSXmGtH25081909563386.jpg','img/Banner_T8556bz25102811291014.jpg','img/Banner_TN3Dxv625021014354271.jpg','img/Banner_U8pB0dI25082714383635.jpg','img/Banner_upPwf1v24101713584007.jpg','img/Banner_w9S9qXw25072517145286.jpg','img/Banner_WMSIPbK25061014032956.jpg','img/Banner_xq7MI9Q25100217535222.jpg','img/Banner_YsW92UA24103114330047.jpg',
         'img/1000001_001.png','img/1000002_004.png','img/1000003_0013.png','img/1000003_006.png','img/1000004_0010.png','img/1000004_0017.png','img/1000004_006.png','img/1000004_007.png','img/1000005_009.png','img/1000005_010.png','img/1000007_004.png','img/1000008_004.png','img/1000009_001.png','img/1000009_002.png','img/1000011_002.png','img/1000011_003.png','img/1000011_004.png','img/1000012_001.png','img/1000013_002.png','img/1000014_003.png','img/1000014_004.png','img/1000016_001.png','img/1000016_003.png','img/1000017_001.png','img/1000018_003.png','img/1000019_002.png','img/1000021_005.png','img/1000022_006.png','img/1000023_001.png','img/1000024_003.png','img/1000026_001.png','img/1000027_002.png','img/1000028_002.png','img/1000030_002.png','img/1000030_003.png','img/1000032_003.png','img/1000036_003.png',
         'img/baemin.webp','img/bat.webp','img/channeltalk.webp','img/kurly.webp','img/larasweet.webp','img/tada.webp','img/weverse.webp','img/wrtn.webp','img/0.webp','img/2.webp','img/next-enterprise.png'
-      ].map(function(p){return 'https://jelin-cc.github.io/jobplanet-ut/'+p;});
+      ].map(function(p){return 'https://jelincc.github.io/jobplanet-ut/'+p;});
       // 셔플
       var _thumbShuffled = cardThumbPool.slice();
       function reshuffleThumbs(){
@@ -15078,7 +15078,7 @@ function closeRatePopup() {
 
         // List view (no image)
         var logoFiles = [];
-        for(var li=1;li<=36;li++) logoFiles.push('https://jelin-cc.github.io/jobplanet-ut/D-sample_logo_'+li+'.svg');
+        for(var li=1;li<=36;li++) logoFiles.push('https://jelincc.github.io/jobplanet-ut/D-sample_logo_'+li+'.svg');
         for(var lsi=logoFiles.length-1;lsi>0;lsi--){var lsj=Math.floor(Math.random()*(lsi+1));var lst=logoFiles[lsi];logoFiles[lsi]=logoFiles[lsj];logoFiles[lsj]=lst;}
 
         var listHtml = cards.map(function(c, ci) {
@@ -16590,7 +16590,7 @@ function closeRatePopup() {
     <button class="jk-close" onclick="closeJK()">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--tx)" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-    <img class="jk-img" src="https://jelin-cc.github.io/jobplanet-ut/JOBKO.png" alt="">
+    <img class="jk-img" src="https://jelincc.github.io/jobplanet-ut/JOBKO.png" alt="">
     <div class="jk-title">잡코리아로 이동중<span class="jk-dots"><span class="jk-dot">.</span><span class="jk-dot">.</span><span class="jk-dot">.</span></span></div>
   </div>
 </div>
@@ -16927,16 +16927,16 @@ function closeRatePopup() {
         <div class="detail-img-carousel">
           <div class="detail-img-track" id="carouselTrack">
             <div class="detail-img-slide">
-              <img src="https://jelin-cc.github.io/jobplanet-ut/bat.webp" alt="회사 이미지 1" draggable="false">
+              <img src="https://jelincc.github.io/jobplanet-ut/bat.webp" alt="회사 이미지 1" draggable="false">
             </div>
             <div class="detail-img-slide">
-              <img src="https://jelin-cc.github.io/jobplanet-ut/weverse.webp" alt="회사 이미지 2" draggable="false">
+              <img src="https://jelincc.github.io/jobplanet-ut/weverse.webp" alt="회사 이미지 2" draggable="false">
             </div>
             <div class="detail-img-slide">
-              <img src="https://jelin-cc.github.io/jobplanet-ut/channeltalk.webp" alt="회사 이미지 3" draggable="false">
+              <img src="https://jelincc.github.io/jobplanet-ut/channeltalk.webp" alt="회사 이미지 3" draggable="false">
             </div>
             <div class="detail-img-slide">
-              <img src="https://jelin-cc.github.io/jobplanet-ut/tada.webp" alt="회사 이미지 4" draggable="false">
+              <img src="https://jelincc.github.io/jobplanet-ut/tada.webp" alt="회사 이미지 4" draggable="false">
             </div>
           </div>
           <button class="detail-carousel-btn prev" id="carouselPrev">
@@ -18126,11 +18126,11 @@ function closeRatePopup() {
     '고객/운영':['CS','운영 매니저','물류','MD']
   };
   var obCondData = [
-    {key:'wlb',name:'워라밸',desc:'야근 빈도, 휴가, 업무 강도',icon:'<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-balance.svg" width="28" height="28">'},
-    {key:'promotion',name:'승진 기회',desc:'성장 속도, 커리어 경로',icon:'<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-barchart.svg" width="28" height="28">'},
-    {key:'mgmt',name:'경영진',desc:'리더십, 의사결정 방식',icon:'<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-institution.svg" width="28" height="28">'},
-    {key:'culture',name:'사내문화',desc:'팀워크, 조직 분위기',icon:'<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-handshake.svg" width="28" height="28">'},
-    {key:'benefit',name:'복지',desc:'급여, 보상, 복리후생',icon:'<img src="https://jelin-cc.github.io/jobplanet-ut/emoji-wrappedgift.svg" width="28" height="28">'}
+    {key:'wlb',name:'워라밸',desc:'야근 빈도, 휴가, 업무 강도',icon:'<img src="https://jelincc.github.io/jobplanet-ut/emoji-balance.svg" width="28" height="28">'},
+    {key:'promotion',name:'승진 기회',desc:'성장 속도, 커리어 경로',icon:'<img src="https://jelincc.github.io/jobplanet-ut/emoji-barchart.svg" width="28" height="28">'},
+    {key:'mgmt',name:'경영진',desc:'리더십, 의사결정 방식',icon:'<img src="https://jelincc.github.io/jobplanet-ut/emoji-institution.svg" width="28" height="28">'},
+    {key:'culture',name:'사내문화',desc:'팀워크, 조직 분위기',icon:'<img src="https://jelincc.github.io/jobplanet-ut/emoji-handshake.svg" width="28" height="28">'},
+    {key:'benefit',name:'복지',desc:'급여, 보상, 복리후생',icon:'<img src="https://jelincc.github.io/jobplanet-ut/emoji-wrappedgift.svg" width="28" height="28">'}
   ];
   var obSelectedCat='';
   var obSelectedJob='';
@@ -18451,9 +18451,9 @@ function closeRatePopup() {
       closeAllPopups();
       // 기본 기업 복원
       var defaults = [
-        {name:'네이버', logo:'https://jelin-cc.github.io/jobplanet-ut/naver.png', score:'4.1', pct:'적합 88%'},
-        {name:'토스', logo:'https://jelin-cc.github.io/jobplanet-ut/toss.png', score:'3.6', pct:'적합 85%'},
-        {name:'카카오', logo:'https://jelin-cc.github.io/jobplanet-ut/kakao.png', score:'3.2', pct:'적합 82%'}
+        {name:'네이버', logo:'https://jelincc.github.io/jobplanet-ut/naver.png', score:'4.1', pct:'적합 88%'},
+        {name:'토스', logo:'https://jelincc.github.io/jobplanet-ut/toss.png', score:'3.6', pct:'적합 85%'},
+        {name:'카카오', logo:'https://jelincc.github.io/jobplanet-ut/kakao.png', score:'3.2', pct:'적합 82%'}
       ];
       defaults.forEach(function(d, i){
         var el = document.getElementById('fi-'+i);
@@ -18494,9 +18494,9 @@ function closeRatePopup() {
     } else {
       // 비로그인: 기본 기업 복원
       var defaults = [
-        {name:'네이버', logo:'https://jelin-cc.github.io/jobplanet-ut/naver.png', score:'4.1', pct:'적합 88%'},
-        {name:'토스', logo:'https://jelin-cc.github.io/jobplanet-ut/toss.png', score:'3.6', pct:'적합 85%'},
-        {name:'카카오', logo:'https://jelin-cc.github.io/jobplanet-ut/kakao.png', score:'3.2', pct:'적합 82%'}
+        {name:'네이버', logo:'https://jelincc.github.io/jobplanet-ut/naver.png', score:'4.1', pct:'적합 88%'},
+        {name:'토스', logo:'https://jelincc.github.io/jobplanet-ut/toss.png', score:'3.6', pct:'적합 85%'},
+        {name:'카카오', logo:'https://jelincc.github.io/jobplanet-ut/kakao.png', score:'3.2', pct:'적합 82%'}
       ];
       defaults.forEach(function(d, i){
         var el = document.getElementById('fi-'+i);
@@ -18843,7 +18843,7 @@ function closeRatePopup() {
     // 로고: D-sample 로고만 랜덤 사용
     var cdLogoEl = document.getElementById('cdLogo');
     var randomLogoIdx = Math.floor(Math.random()*36)+1;
-    cdLogoEl.innerHTML = '<img src="https://jelin-cc.github.io/jobplanet-ut/D-sample_logo_'+randomLogoIdx+'.svg" alt="">';
+    cdLogoEl.innerHTML = '<img src="https://jelincc.github.io/jobplanet-ut/D-sample_logo_'+randomLogoIdx+'.svg" alt="">';
     document.getElementById('cdName').textContent = data.name;
     document.getElementById('cdScore').textContent = data.score;
     document.getElementById('cdInd').textContent = data.industry;
@@ -20455,42 +20455,42 @@ function closeRatePopup() {
 
     // ===== 기업 상세 캐러셀 이미지 랜덤 =====
     var companyImages = [
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_1tW2cFJ25032514173967.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_2loOfzo25052915140814.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_4UvepA225031914015500.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_5DoT1nZ24111411320084.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_abbb51t25102816595906.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_ABi9lTY25101711202489.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_C3oJp7q25102817553882.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_DiMdvUg24111216474465.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_E0mPEv625102715305380.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_FA8757M24122415321709.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_gBJ6Ui725082910083325.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_GcTm5G225072215243389.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_gRZK5oC25072810592603.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_HbrORCN25103117185664.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_HNPO3bT24072313252617.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_iVPMD6p25092209323563.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_jkoaT8i25101510050474.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_Jp5fx7g25012110512020.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_kAifOHK25082013255486.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_kMaNyYZ25110310042647.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_mcoXCR225103017092404.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_OP2jQmz25052715204502.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_PuQjGUE25011715315914.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_Q48VLkS24121310465549.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_RVLkZ2025102911373557.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_skH5zUn24111917362523.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_sPBc4me25102718060629.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_sSXmGtH25081909563386.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_T8556bz25102811291014.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_TN3Dxv625021014354271.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_U8pB0dI25082714383635.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_upPwf1v24101713584007.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_w9S9qXw25072517145286.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_WMSIPbK25061014032956.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_xq7MI9Q25100217535222.jpg',
-      'https://jelin-cc.github.io/jobplanet-ut/img/Banner_YsW92UA24103114330047.jpg'
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_1tW2cFJ25032514173967.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_2loOfzo25052915140814.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_4UvepA225031914015500.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_5DoT1nZ24111411320084.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_abbb51t25102816595906.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_ABi9lTY25101711202489.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_C3oJp7q25102817553882.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_DiMdvUg24111216474465.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_E0mPEv625102715305380.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_FA8757M24122415321709.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_gBJ6Ui725082910083325.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_GcTm5G225072215243389.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_gRZK5oC25072810592603.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_HbrORCN25103117185664.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_HNPO3bT24072313252617.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_iVPMD6p25092209323563.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_jkoaT8i25101510050474.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_Jp5fx7g25012110512020.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_kAifOHK25082013255486.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_kMaNyYZ25110310042647.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_mcoXCR225103017092404.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_OP2jQmz25052715204502.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_PuQjGUE25011715315914.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_Q48VLkS24121310465549.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_RVLkZ2025102911373557.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_skH5zUn24111917362523.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_sPBc4me25102718060629.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_sSXmGtH25081909563386.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_T8556bz25102811291014.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_TN3Dxv625021014354271.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_U8pB0dI25082714383635.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_upPwf1v24101713584007.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_w9S9qXw25072517145286.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_WMSIPbK25061014032956.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_xq7MI9Q25100217535222.jpg',
+      'https://jelincc.github.io/jobplanet-ut/img/Banner_YsW92UA24103114330047.jpg'
     ];
     function shuffleDetailImages(){
       var arr = companyImages.slice();
